@@ -2,18 +2,17 @@
 Tidy Data Set based on Human Activity Recognition Using Smartphones Dataset
 ===========================================================================
 Jim Gianoglio
-@jgianoglio
 ==================================================================
 
 The run_analysis.R script downloads the data collected from the accelerometers
 from the Samsung Galaxy S smartphone. A full description of the original data
 is available at the site where the data was obtained: 
 
-[link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 The original data for the project is located at the following link: 
 
-[link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 It transforms the data by combining the test and train data, activity names and
 subject IDs into a single data frame. It includes only variables that are the
