@@ -30,6 +30,7 @@ http://vita.had.co.nz/papers/tidy-data.pdf
 Specific details and descriptions about the tidy data file contents can be found
 in the CodeBook.md file.
 
-To read the tidy data file into R, you can use the following code:
+To read the tidy data file into R, you can use the following code:  
+
 data <- read.table(file_path, header = TRUE)
 View(data)
