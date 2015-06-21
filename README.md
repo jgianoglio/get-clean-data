@@ -32,5 +32,9 @@ in the CodeBook.md file.
 
 To read the tidy data file into R, you can use the following code:  
 
-data <- read.table(file_path, header = TRUE)  
+address <- "https://s3.amazonaws.com/coursera-uploads/user-0af495128aff5ff9db48b2ab/973502/asst-3/9358532017ca11e5a88b0f955a5332ec.txt"
+address <- sub("^https", "http", address)
+data <- read.table(url(address), header = TRUE)
 View(data)
+
+
