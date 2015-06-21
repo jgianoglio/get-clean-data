@@ -1,6 +1,10 @@
 # Download the data. A full description of this data is available at:
 # http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+#install/load necessary packages
+library("data.table", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("dplyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+
 temp <- tempfile()
 if(!file.exists("./data")){dir.create("./data")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -85,4 +89,4 @@ varNames <- paste("Avg", varNames, sep="")
 setnames(fullDataAvg, 3:68, varNames)
 
 # Output fullDataAvg data frame to a file
-write.table(fullDataAvg, "activity recognition tidy data")
+write.table(fullDataAvg, "activity recognition tidy data.txt")
